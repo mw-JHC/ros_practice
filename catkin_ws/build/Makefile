@@ -285,6 +285,58 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named number_counter_node
+
+# Build rule for target.
+number_counter_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 number_counter_node
+.PHONY : number_counter_node
+
+# fast build rule for target.
+number_counter_node/fast:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/number_counter_node.dir/build.make my_robot_tutorials/CMakeFiles/number_counter_node.dir/build
+.PHONY : number_counter_node/fast
+
+#=============================================================================
+# Target rules for targets named smartphone_node
+
+# Build rule for target.
+smartphone_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 smartphone_node
+.PHONY : smartphone_node
+
+# fast build rule for target.
+smartphone_node/fast:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/smartphone_node.dir/build.make my_robot_tutorials/CMakeFiles/smartphone_node.dir/build
+.PHONY : smartphone_node/fast
+
+#=============================================================================
+# Target rules for targets named number_publisher_node
+
+# Build rule for target.
+number_publisher_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 number_publisher_node
+.PHONY : number_publisher_node
+
+# fast build rule for target.
+number_publisher_node/fast:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/number_publisher_node.dir/build.make my_robot_tutorials/CMakeFiles/number_publisher_node.dir/build
+.PHONY : number_publisher_node/fast
+
+#=============================================================================
+# Target rules for targets named robot_news_radio_transmitter_anonymous
+
+# Build rule for target.
+robot_news_radio_transmitter_anonymous: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 robot_news_radio_transmitter_anonymous
+.PHONY : robot_news_radio_transmitter_anonymous
+
+# fast build rule for target.
+robot_news_radio_transmitter_anonymous/fast:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter_anonymous.dir/build.make my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter_anonymous.dir/build
+.PHONY : robot_news_radio_transmitter_anonymous/fast
+
+#=============================================================================
 # Target rules for targets named node_cpp
 
 # Build rule for target.
@@ -374,6 +426,19 @@ std_msgs_generate_messages_lisp: cmake_check_build_system
 std_msgs_generate_messages_lisp/fast:
 	$(MAKE) -f my_robot_tutorials/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make my_robot_tutorials/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named robot_news_radio_transmitter
+
+# Build rule for target.
+robot_news_radio_transmitter: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 robot_news_radio_transmitter
+.PHONY : robot_news_radio_transmitter
+
+# fast build rule for target.
+robot_news_radio_transmitter/fast:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/build.make my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/build
+.PHONY : robot_news_radio_transmitter/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_py
@@ -514,6 +579,10 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... number_counter_node"
+	@echo "... smartphone_node"
+	@echo "... number_publisher_node"
+	@echo "... robot_news_radio_transmitter_anonymous"
 	@echo "... node_cpp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_nodejs"
@@ -521,6 +590,7 @@ help:
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... robot_news_radio_transmitter"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_nodejs"

@@ -137,6 +137,20 @@ include_directories(
 add_executable(node_cpp src/first_cpp_node.cpp)
 target_link_libraries(node_cpp ${catkin_LIBRARIES})
 
+add_executable(robot_news_radio_transmitter src/robot_news_radio_transmitter.cpp)
+target_link_libraries(robot_news_radio_transmitter ${catkin_LIBRARIES})
+
+add_executable(robot_news_radio_transmitter_anonymous src/robot_news_radio_transmitter_anonymous.cpp)
+target_link_libraries(robot_news_radio_transmitter_anonymous ${catkin_LIBRARIES})
+
+add_executable(smartphone_node src/smartphone.cpp)
+target_link_libraries(smartphone_node ${catkin_LIBRARIES})
+
+add_executable(number_publisher_node src/number_publisher.cpp)
+target_link_libraries(number_publisher_node ${catkin_LIBRARIES})
+
+add_executable(number_counter_node src/number_counter.cpp)
+target_link_libraries(number_counter_node ${catkin_LIBRARIES})
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
